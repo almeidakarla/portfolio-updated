@@ -50,7 +50,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -128,7 +128,7 @@ h6 {
 
   .header~main .hero {
     margin-left: -160px;
-    width: 99vw;
+    width: 100vw;
   }
 }
 
