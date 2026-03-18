@@ -55,6 +55,7 @@ html {
 
 ::-webkit-scrollbar-track {
   background: transparent;
+  padding: 0;
 }
 
 ::-webkit-scrollbar-thumb {
