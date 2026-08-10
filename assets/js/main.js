@@ -77,6 +77,22 @@
   document.addEventListener('scroll', toggleScrollTop);
 
   /**
+   * Scroll progress bar
+   */
+  let scrollProgress = document.querySelector('.scroll-progress span');
+
+  function updateScrollProgress() {
+    if (!scrollProgress) return;
+    let scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    let progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+    scrollProgress.style.height = Math.min(progress, 100) + '%';
+  }
+
+  window.addEventListener('load', updateScrollProgress);
+  window.addEventListener('resize', updateScrollProgress);
+  document.addEventListener('scroll', updateScrollProgress);
+
+  /**
    * Animation on scroll function and init
    */
   function aosInit() {
