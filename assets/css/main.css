@@ -666,6 +666,12 @@ section,
   overflow: hidden;
 }
 
+.portfolio .portfolio-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
