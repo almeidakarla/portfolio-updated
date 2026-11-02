@@ -375,26 +375,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    var tl1 = gsap.timeline();
-    
-    tl1
-    .to('.screen-loading', {
-      duration: 2,
-      opacity: 0, 
-      delay: 5,
-      //filter: 'blur(10px)',
-      //y: "-10%",
-      ease: "power4.out",
-    })
-    .from(".hero div", {
-      duration: 3, 
-      opacity: 0, 
-      y: 200,
-      stagger:{each: 0.1},
-      ease: "power4.out",
-    }, '-=1.5')
-
-
     gsap.from(".card-1-scrub",{
       x: -30,
       rotate: '10deg',

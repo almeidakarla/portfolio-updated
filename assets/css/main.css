@@ -571,6 +571,12 @@ section,
   border-radius: 5px;
 }
 
+@media (max-width: 991px) {
+  .about img {
+    max-width: 100%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
@@ -664,6 +670,12 @@ section,
 .portfolio .portfolio-item {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio .portfolio-item img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
 }
 
 .portfolio .portfolio-item .portfolio-info {
